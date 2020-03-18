@@ -1,0 +1,181 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    background-color: #dddddd;
+}
+
+/*
+    Blueprint css override
+ */
+
+.bp3-tabs {
+    background-color: #121212;
+}
+
+.bp3-tab-list > *:not(:last-child) {
+    margin: unset;
+}
+
+.bp3-tab {
+    color: #1d708e;
+    padding: 5px 20px;
+}
+
+.bp3-tab:focus {
+    outline: unset;
+    outline-offset: unset;
+}
+
+.bp3-tab-panel {
+    background-color: #4b4b4b;
+    color: #c8c8c8;
+    margin: 0;
+}
+
+.bp3-tab-indicator-wrapper {
+    display: none;
+}
+
+.bp3-tab[aria-selected="true"] {
+    color: #639db4;
+    background-color: #4b4b4b !important;
+    font-weight: bold;
+}
+
+.bp3-tab:not([aria-disabled="true"]):hover {
+    color: #639db4;
+}
+
+.bp3-popover .bp3-popover-content {
+    background: #4b4b4b;
+}
+
+.bp3-popover .bp3-popover-arrow-fill {
+    fill: #4b4b4b;
+}
+
+.bp3-overlay-backdrop {
+    background-color: transparent;
+}
+
+.bp3-dialog {
+    background-color: #4b4b4b;
+    border: 1px #639db4 solid;
+    border-radius: unset;
+    width: max-content;
+}
+
+.bp3-dialog-header {
+    background-color: #121212;
+    border: 1px #639db4 solid;
+    border-radius: unset;
+    padding: unset;
+}
+
+.bp3-dialog-header .bp3-heading {
+    color: #1d708e;
+    margin: 0 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.bp3-dialog-body {
+    color: #639db4;
+}   
+
+/*
+    Custom css
+ */
+
+.d-flex {
+    display: flex;
+}
+
+.empty-tab {
+    padding: 10px 20px;
+}
+
+.menu-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.menu-bar > div {
+    margin-left: 2rem;
+    width: calc(100% - 100px);
+}
+
+.menu-tab-button {
+    display: flex;
+    width: 5rem;
+    height: 7rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #2d2d2d;
+    color: #c8c8c8;
+    font-weight: bold;
+    border: 1px #2a4f5d solid;
+    margin: 5px;
+}
+
+.menu-tab-button:hover {
+    cursor: pointer;
+}
+
+.menu-tab-button-new {
+    display: flex;
+    width: 6rem;
+    height: 7rem;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: #1f8eb7;
+    color: #2d2d2d;
+    font-weight: bold;
+    border: 1px #2a4f5d solid;
+    margin: 5px;
+}
+
+.menu-tab-button-new > svg {
+    font-size: 4rem;
+}
+
+.menu-tab-button-new:hover {
+    cursor: pointer;
+}
+
+.load-project-dlg .bp3-dialog-body > div:first-child {
+    background-color: #121212;
+}
+
+.load-project-dlg .bp3-dialog-body > div:first-child div {
+    background-color: #4b4b4b;
+    border: 1px solid #121212;
+    border-bottom: unset;
+    padding: 15px;
+}
+
+.load-project-dlg .bp3-dialog-body > div:last-child {
+    padding: 15px;
+    border: 1px solid #639db4;
+}
